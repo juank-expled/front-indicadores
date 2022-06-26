@@ -6,6 +6,7 @@
 - Desarrollo para la visualización deindicadores y graficos
 - detalle de los ultimos meses con variasiones a sus precios 
 - Aplicación realizada en Angular, bootstrap y angular material
+- Testeo aplicado con Jasmine y Karma
 
 
 ## Detalles de tecnologias aplicadas
