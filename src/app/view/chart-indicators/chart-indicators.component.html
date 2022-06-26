@@ -1,0 +1,33 @@
+    <p class="loading" *ngIf="(!show)">cargando información de mindicador.cl ...</p>
+    <div class="container-row" *ngIf="(show)">
+    <div class="row row-detail">
+        <div class="col price">
+            {{price}}
+        </div>
+    </div>
+    <div class="row row-detail">
+        <div class="col">
+            Nombre
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" readonly value="{{nombre}}" [(ngModel)]="nombre" />
+        </div>
+    </div>
+    <div class="row row-detail">
+        <div class="col">
+            Fecha
+        </div>
+        <div class="col">
+            <input type="date" class="form-control" readonly [(ngModel)]="fecha" />
+        </div>
+    </div>
+    <div class="row row-detail">
+        <div class="col">
+            Unidad de medida
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" readonly [(ngModel)]="fecha" />
+        </div>
+    </div>
+    <div *ngIf="(show)" id="curve_chart" style="width: 90%; height: 400px;text-align: center;"></div>
+</div>

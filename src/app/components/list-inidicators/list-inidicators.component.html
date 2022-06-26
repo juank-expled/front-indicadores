@@ -1,0 +1,15 @@
+<mat-list class="cont-list" *ngIf="indicators">
+    <mat-list-item *ngFor="let item of indicators">
+        <div mat-line class="title-indicator" (click)="(item.onClickDetail)?item.onClickDetail(item):''">{{item.nombre}}</div>
+        <div mat-line class="color-item"> {{item.unidad_medida}} </div>
+        <button class="color-item" mat-icon-button (click)="(item.onClickInformation)?item.onClickInformation(item):''">
+            <mat-icon>{{item.icon || 'info_outline'}}</mat-icon>
+        </button>
+    </mat-list-item>
+</mat-list>
+<mat-list class="cont-list2" *ngIf="detailIndicator">
+    <mat-list-item *ngFor="let item of detailIndicator">
+        <div mat-line class="title-indicator2">{{item.fecha | date:'dd/MM/yyyy'}}</div>
+        <div mat-line class="price-item"> {{item.valor}} </div>
+    </mat-list-item>
+</mat-list>

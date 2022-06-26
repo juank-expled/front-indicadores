@@ -1,0 +1,6 @@
+<div class="header" *ngIf="header">
+    <p *ngIf="header.backName" class="cont-back"><mat-icon class="btn-arrow" (click)="back(header.route || '')">chevron_left</mat-icon>
+        <label (click)="back(header.route || '')" style="cursor: pointer;">{{header.backName}}</label>
+    </p>
+    <p class="name-menu"><label>{{header.name}}</label></p>
+</div>
